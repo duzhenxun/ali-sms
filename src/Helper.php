@@ -1,13 +1,13 @@
 <?php
 
-namespace Aliyun;
+namespace AliyunSdk;
 
 /**
  * 签名助手 2017/11/19
  *
  * Class SignatureHelper
  */
-class SignatureHelper {
+class Helper {
 
     /**
      * 生成签名并发起请求

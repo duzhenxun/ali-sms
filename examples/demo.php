@@ -1,22 +1,7 @@
 <?php
+require 'vendor/autoload.php';
 
-/*
- * 此文件用于验证短信API接口
- * 请确保文件为utf-8编码，并替换相应参数为您自己的信息后执行
- * 建议执行前执行EnvTest.php验证PHP环境
- *
- * 2017/11/19
- */
-
-require_once 'SmsApi.php';
-
-use Aliyun\SmsApi;
-
-// 调用示例：
-set_time_limit(0);
-header('Content-Type: text/plain; charset=utf-8');  // 仅用于输出清晰，非必需
-
-$sms = new SmsApi("LTAI49Ibha3Qy7gj", "KCL3BUGArOyoSuFAukUBLSBgWBQR7y"); // 请参阅 https://ak-console.aliyun.com/ 获取AK信息
+$sms = new AliyunSdk\Sms("xxx", "xxx");
 
 $response = $sms->sendSms(
     "杜振训", // 短信签名

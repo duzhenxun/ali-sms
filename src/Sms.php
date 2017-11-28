@@ -1,13 +1,7 @@
 <?php
-
-namespace Aliyun;
-
-require_once 'SignatureHelper.php';
-
-use SignatureHelper;
-
-
-class SmsApi {
+namespace AliyunSdk;
+use AliyunSdk\Helper;
+class Sms {
 
     private $accessKeyId;
     private $accessKeySecret;
@@ -20,6 +14,7 @@ class SmsApi {
     function  __construct($accessKeyId, $accessKeySecret) {
         $this->accessKeyId = $accessKeyId;
         $this->accessKeySecret = $accessKeySecret;
+        echo 'aaa';
     }
 
     /**
@@ -43,7 +38,7 @@ class SmsApi {
     public function sendSms($signName, $templateCode, $phoneNumbers, $templateParam = null, $outId = null, $smsUpExtendCode = null) {
 
         // 初始化SendSmsRequest实例用于设置发送短信的参数
-        $helper = new SignatureHelper();
+        $helper = new Helper();
 
         $params = array (
             "RegionId" => "cn-hangzhou",
@@ -94,7 +89,7 @@ class SmsApi {
     public function queryDetails($phoneNumbers, $sendDate, $pageSize = 10, $currentPage = 1, $bizId=null) {
 
         // 初始化SendSmsRequest实例用于设置发送短信的参数
-        $helper = new SignatureHelper();
+        $helper = new Helper();
 
         $params = array (
             "RegionId" => "cn-hangzhou",
