@@ -14,7 +14,7 @@
     },
 	"autoload":{
 		"psr-4":{
-		"Aliyun\\Sms\\":"src"
+		"Aliyun\\Sms\\":"src/"
 		}
 	}
 }
