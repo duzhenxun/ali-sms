@@ -1,10 +1,10 @@
 <?php
 
-namespace Aliyun\Sms;
+namespace Aliyun;
 
 require_once 'SignatureHelper.php';
 
-use Aliyun\Sms\SignatureHelper;
+use SignatureHelper;
 
 
 class SmsApi {

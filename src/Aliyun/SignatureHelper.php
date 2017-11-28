@@ -1,6 +1,6 @@
 <?php
 
-namespace Aliyun\Sms;
+namespace Aliyun;
 
 /**
  * 签名助手 2017/11/19

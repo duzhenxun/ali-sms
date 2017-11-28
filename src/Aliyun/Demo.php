@@ -10,7 +10,7 @@
 
 require_once 'SmsApi.php';
 
-use Aliyun\Sms\SmsApi;
+use Aliyun\SmsApi;
 
 // 调用示例：
 set_time_limit(0);
