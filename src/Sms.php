@@ -14,7 +14,6 @@ class Sms {
     function  __construct($accessKeyId, $accessKeySecret) {
         $this->accessKeyId = $accessKeyId;
         $this->accessKeySecret = $accessKeySecret;
-        echo 'aaa';
     }
 
     /**
